@@ -2,7 +2,7 @@ import React from "react";
 import AuthenticationLayout, {
   AuthenticationData
 } from "../components/authentication/AuthenticationLayout";
-import { login } from "../service/";
+import { login } from "../service/rest/apis";
 import { useCookies } from "react-cookie";
 import Navigation from "../components/routes/Navigation";
 import { AuthProvider } from "../service/models/user.model";
