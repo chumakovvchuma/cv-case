@@ -5,7 +5,6 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "go": "JWT_SECRET=secret npm run start:dev",
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
