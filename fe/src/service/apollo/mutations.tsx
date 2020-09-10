@@ -58,3 +58,30 @@ export const DELETE_VOTE = gql`
     }
   }
 `;
+export const SIGNUP = gql`	
+  mutation Signup($request: SignUpRequest!) {	
+    signup(request: $request) {	
+      error	
+      user {	
+        id	
+        email	
+        authProvider	
+      }	
+      token	
+    }	
+  }	
+`;	
+
+export const LOGIN = gql`	
+  mutation Login($request: LoginRequest!) {	
+    login(request: $request) {	
+      error	
+      user {	
+        id	
+        email	
+        authProvider	
+      }	
+      token	
+    }	
+  }	
+`;
