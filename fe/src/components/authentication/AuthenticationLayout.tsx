@@ -51,7 +51,8 @@ function Login(props: Props) {
         setIsLoggedIn(true);
       })
       .catch(error => {
-        setError(error?.response?.data?.error);
+        const errorJSON = JSON.parse(JSON.stringify(error));
+        setError(errorJSON?.networkError?.result?.message);
       });
   };
 
